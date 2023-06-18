@@ -15,8 +15,11 @@ This is a complete data analysis project, starting with scraping data from a web
  * It includes a webpage for displaying the data and also includes illustrious data analysis in Jupyter Notebook file, scraper.ipynb
  * It includes data visualisations provided through a link in the webpage, where a user can view multiple varieties of visualizations based on his/her choice of input parameters
  #### Gallery
- 
+ ![Screenshot 2023-06-19 011505](https://github.com/SDeyGitHubber/Country_Web_Scraping-and-data_Analysis/assets/114286007/7d4ac644-0619-4d0e-8102-513d19e5363b)
 ![AAA](https://github.com/SDeyGitHubber/Country_Web_Scraping-and-data_Analysis/assets/114286007/bd3f92f5-be70-400c-a613-f524a0a21e9c)
 
 
  #### A short Video of its working
+
+https://github.com/SDeyGitHubber/Country_Web_Scraping-and-data_Analysis/assets/114286007/49c8be4b-5468-4d5a-b271-d500153aa0e0
+
