@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+           font-family: Arial, sans-serif;
+           margin: 0;
+           padding: 20px;
+        }
+  
+        h1 {
+           text-align: center;
+           margin-bottom: 20px;
+        }
+  
+        table {
+           width: 100%;
+           border-collapse: collapse;
+           margin-top: 30px;
+        }
+  
+        th, td {
+           padding: 8px;
+           text-align: left;
+           border-bottom: 1px solid #ddd;
+        }
+  
+        th {
+           background-color: #38c5ec;
+           font-weight: bold;
+        }
+  
+        tr:nth-child(even) {
+           background-color: #cfaaaa;
+        }
+
+        .dashboard-button {
+         display: block;
+         margin: 0 auto;
+         padding: 10px 20px;
+         background-color: #4CAF50;
+         color: #fff;
+         text-decoration: none;
+         font-weight: bold;
+         border-radius: 5px;
+         text-align: center;
+      }
+     </style>
+</head>
+<body>
+    <header>
+        <h1>Scraped Data</h1>
+        <a href="https://public.tableau.com/authoring/Country-WiseStatisticalDataAnalysis/Dashboard1#1" target="_blank" class="dashboard-button">View Dashboard</a>
+     </header>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Country (or dependency)</th>
+                <th>Population (2020)</th>
+                <th>Yearly Change</th>
+                <th>Net Change</th>
+                <th>Density (P/Km²)</th>
+                <th>Land Area (Km²)</th>
+                <th>Migrants (net)</th>
+                <th>Fert. Rate</th>
+                <th>Med. Age</th>
+                <th>Urban Pop %</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+                <tr>
+                   <td>{{ row['#'] }}</td>
+                   <td>{{ row['Country (or dependency)'] }}</td>
+                   <td>{{ row['Population (2020)'] }}</td>
+                   <td>{{ row['Yearly Change'] }}</td>
+                   <td>{{ row['Net Change'] }}</td>
+                   <td>{{ row['Density (P/Km²)'] }}</td>
+                   <td>{{ row['Land Area (Km²)'] }}</td>
+                   <td>{{ row['Migrants (net)'] }}</td>
+                   <td>{{ row['Fert. Rate'] }}</td>
+                   <td>{{ row['Med. Age'] }}</td>
+                   <td>{{ row['Urban Pop %'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
